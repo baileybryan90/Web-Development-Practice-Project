@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Frontpage of the cheatbook">
+        <title>Web Development Cheatbook</title>
+        <link rel="stylesheet" href="_css/styles.css">
+        <script src="_scripts/tabs.js"></script>
+        <!--add a background-->
+        <!--add design concepts page-->
+    </head>
+    <body>
+        <div id="top">
+            <h1>Web Development Cheatbook</h1>
+            <h2>Quick Reference page</h2>
+            <p> This is the quick reference page. Its not an exhaustive list because I am only going to list I know and add more when I learn them. <em>*add some in page links here*</em></p>
+            <p> navigation:<em>*add some navigation links here*</em></p>
+            
+            <h3>HTML key concepts</h3>
+            <ul>
+                <li>HTML docs are all <strong>plain text</strong>.</li>
+                <li>Web browsers <strong>only</strong> do what you tell them to do.</li>
+                <li><strong>Structure</strong> is added to elements with tags.</li>
+                <li>Tags <strong>must</strong> be nested properly.</li>
+                <li>Attributes can add <strong>functions</strong> or <strong>meaning</strong> to elements</li>
+            </ul>
+        </div>
+        
+        
+        
+        <aside role="complementary" class="quickRef">
+            <h3>Tag Quick Reference</h3>
+            <!--tab links go here-->
+        <div id="tabContainer">
+        <div id="tabs">
+            <ul>
+                <li id="tab1"><a href="#tabPanel1">Core tabs</a></li>
+                <li id="tab1"><a href="#tabPanel2">Tables</a></li>
+                <li id="tab1"><a href="#tabPanel3">*blank*</a></li>
+            </ul>
+        </div>
+
+        <div id="containers">
+        <div id=tabPanel1>
+            <h4>Core tabs</h4>
+            <!-- I learned to make this table by 
+                inspecting elements on w3c's own list of tags!-->
+            <table>
+                <tbody>
+                    <tr>
+                        <th style:"width:25%">tag</th>
+                        <th>description</th>
+                    </tr>
+                    <tr>
+                        <td><b>&lthtml></b></td>
+                        <td> Defines the root of an html document. kinda like main() in c++, though that can be confused with &ltmain> </td>
+                    </tr>
+                    <tr>
+                        <td><b>&lthead></b></td>
+                        <td> Defines info about the document. This includes metadata and is also where you include your css and javascript files</td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltbody></b></td>
+                        <td> Defines the body of the page  </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltmeta></b></td>
+                        <td> Metadata for the user agent. </td>
+                    </tr>
+                    <tr>
+                        <td><b>&lttitle></b></td>
+                        <td> This is the little title on the browser tab. </td>
+                    </tr>
+                    <tr>
+                        <td><b>&lth1 - &lth6></b></td>
+                        <td> Header text. I wonder why there is only 6 levels? <em>*warning, not meant for resizing text</em></td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltp></b></td>
+                        <td> Paragraph. Any old blob of text I guess. </td>
+                    </tr>
+                    <tr>
+                        <td><b>&lti></b></td>
+                        <td> Italicized but not emphasized text.  </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltb></b></td>
+                        <td> Bolded but not strongly emphasized text </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltp></b></td>
+                        <td> Paragraph </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltem></b></td>
+                        <td> Emphasized text. Basically italicized but user agents may treat it differently </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltstrong></b></td>
+                        <td> Strongly emphasized text. Basically bolded but user agents may treat it differently  </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltbr></b></td>
+                        <td> Line break. Since white space in unmarked text gets ignored you need stuff like this.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltdl></b></td>
+                        <td> Definition List. </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltdt></b></td>
+                        <td> Definition term. Child of dl and sibling of dd </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltdd></b></td>
+                        <td> Definition data. Child of dl and sibling of dt. Describes the dt it is paired with.  </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltheader></b></td>
+                        <td> Container for introductory content. Like the header of a word document basically. There are heads, headers and headings so don't get them confused </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltfooter></b></td>
+                        <td> Extra content at the foot of a page. Usually copyright and contact info.  </td>
+                    </tr>
+                    <tr>
+                        <td><b>&lta></b></td>
+                        <td> Anchor tag, in other words a Hyperlink tag. Not to be confused with &ltlink> which is something else. </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltimg></b></td>
+                        <td> Image link tag. Used kinda like a hyperlink but treated differently so it gets its own tag. </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltdiv></b></td>
+                        <td> Generic division tag. Simply a grouping of elements. This can mean pretty much anything you want it to. Use id attributes and such to give them more meaning. </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltarticle></b></td>
+                        <td> Usually encloses the main body of text or content of a page. Up to you where an article starts and stops. </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltsection></b></td>
+                        <td> Pretty much like a div. I've mostly seen it used to divide artcle content. Not very meaningful without an attribute describing it.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltaside></b></td>
+                        <td> Side content like extra text blurbs or tables and such. This box is an aside! </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltmain></b></td>
+                        <td> Main content. Whatever you want a user agent to see as the most important content on a page is this basically. Up to you what that is.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltul></b></td>
+                        <td> Unordered list </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltli></b></td>
+                        <td> List item. </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltol></b></td>
+                        <td> Ordered list. </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltstyle></b></td>
+                        <td> CSS style tag. Can be used to apply a style inline to affect only specific things. </td>
+                    </tr>
+                    <tr>
+                        <td><b>&ltlink></b></td>
+                        <td> Link to an external style sheet. Kinda like an anchor tag for css purposes </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> <!-- tab 1 end-->
+            
+            <div id="tabPanel2">
+                <h4>Tables</h4>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><b>&lttable></b></td>
+                            <td> Base of a table. </td>
+                        </tr>
+                         <tr>
+                            <td><b>&ltfoot></b></td>
+                            <td> Foot of a table. Child of table. </td>
+                        </tr>
+                         <tr>
+                            <td><b>&lthead></b></td>
+                            <td> Head of a table. Child of table.</td>
+                        </tr>
+                         <tr>
+                            <td><b>&lttr></b></td>
+                            <td> Table row. Child of table.</td>
+                        </tr>
+                         <tr>
+                            <td><b>&lttd></b></td>
+                            <td> Table data. Each one is a cell on the row it belongs to. Child of tr. </td>
+                        </tr>
+                         <tr>
+                            <td><b>&ltth></b></td>
+                            <td> Table header. Just a header placed within a table. </td>
+                        </tr>
+                    </tbody>
+                </table>
+                    </div> <!-- tab 2 end-->
+                
+        
+            
+            <div id ="tabPanel3">
+                <p>*add details*</p>
+            </div><!--end of tab 3-->
+            
+            
+        
+            
+            
+        </div><!-- end of containers-->
+        </div>
+        </aside>
+        
+        <div id="vocabulary">
+            <h2>HTML vocabulary</h2>
+                <dl>
+                    <dt> HTML</dt>
+                    <dd> HyperText Markup Language. I'm not going to forget that anytime soon, but there it is. If it can be read by a human without much coding knowledge, then its plain text. Markup refers to the tagging that HTML consists of basically. </dd>
+                    <dt> Plain Text</dt>
+                    <dd> Text that is not computationally tagged, specially formatted, or written in code. HTML docs are apparently this, but it doen't look very plain to me. I'll ask someone later.</dd>
+                    <dt> Elements</dt>
+                    <dd>HTML elements consist of tags and the stuff within them. The tag itself defines what the element is and what it should do.</dd>
+                    <dt> Attributes</dt>
+                    <dd> Stuff added to tags to give them more meaning. Written as attribute="thing" with start tag.</dd>
+                    <dt> Tags</dt>
+                    <dd> &ltthese> things. They basically do everything in html.</dd>
+                </dl>
+        </div>
+        
+        <section>
+            <table class="image">
+                <tr><td><img src="_images/Basic%20Website%20Model.PNG" width="90%" alt="Basic Model"></td></tr>
+                 <tr><td class="caption">Basic Web Design Model</td></tr>
+            </table>
+            
+            <p>Feel free to check the <a href="https://www.w3schools.com/tags/" title="w3c tag list" target="_blank">w3c site's tag list</a> if anything seems wrong with mine</p>
+            <p>Other useful links: *add more*</p>
+        </section>
+    </body>
+    <a href="#top"><b>Back to Top</b></a>
+    <footer role="contentinfo">
+        <a href="#top"><b>Back to Top</b></a>
+        <a href="#top"><b>Back to Top</b></a>
+        <a href="#top"><b>Back to Top</b></a>
+        <a href="#top"><b>Back to Top</b></a>
+    <p>made by Bryan Bailey, October 2018.  Email:baileybryan90yahoo.com</p>
+    <img src="_images/profile%20picture.JPG" width="10%" alt="Author: Bryan Bailey">
+    </footer>
+</html>
