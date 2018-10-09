@@ -1,7 +1,7 @@
 /*This stylesheet is borrowed from a website made for a lecture on HTML made by lynda.com
 I have been modifying it liberally but some of it is still their work*/ 
 html, body {
-	/*background: #663399;*/
+	background: crimson;
 	margin: 0;
 }
 h1, h2, h3, h4, h5, h6, p {
@@ -172,7 +172,7 @@ aside.quickRef {
 	cursor:pointer;
 }
 
-/*TEST THIS*/
+
 #tabs > table > .active{
     background: white; /* old browsers */
     cursor:pointer;
